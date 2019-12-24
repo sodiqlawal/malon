@@ -377,7 +377,7 @@ class Home extends Component {
           {/* section title */}
           <div className="contact-title">
             <h1 className="contact-title_name">Work with us</h1>
-            <p className="contact-title_text">Divide details is about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will respond back to you in a couple of hours.</p>
+            <p className="contact-title_text">Malon global is about delivering the best product to our clients. Write a few lines on how we can help you. We will respond back to you in a couple of hours.</p>
           </div>
           {/* end of section title */}
           <div className="contact_center">
