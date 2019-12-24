@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,KAAK,CAAC;IACF,KAAK,EAAE,gBAAgB;GAC1B",
+    "sources": [
+        "TestimonialSlick.scss"
+    ],
+    "names": [],
+    "file": "TestimonialSlick.css"
+}
