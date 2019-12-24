@@ -10,6 +10,11 @@
 
 }
 
+.aboutlinkhover:hover {
+  background: #fff !important;
+  color: black !important;
+}
+
 .imagelogo {
 	width: 120px;
 	height: 30px;
@@ -313,7 +318,7 @@ img {
 }
 
 .imagelogofoot {
-	width: 40px;
+	width: 120px;
 	height: 20px;
 }
 .footercontainertext {
@@ -605,6 +610,10 @@ display: none;
 
 
 @media only screen and (min-width: 576px) {
+  .header {
+    position: absolute;
+  }
+  
   .sectionproduct{
     display: flex;
     flex-direction: row;

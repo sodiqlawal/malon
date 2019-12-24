@@ -3,13 +3,11 @@ import { BrowserRouter as Link } from 'react-router-dom'
 import "animate.css/animate.css";
 import Particles from 'react-particles-js';
 import Slider from './Slider'
-import TestimonialSlick from './TestimonialSlick/TestimonialSlick'
 import ClientSlick from './ClientSlick/ClientSlick'
 import Animate from "animate.css-react";
 import AOS from "aos";
 import NavIcon from "./NavIcon";
 import SideDrawer from "./SideDrawer";
-// import frontend from "../images/frontend.jpg";
 import blackwelcome from "../images/blackwelcome.jpg";
 import olamide from "../images/olamide.jpg";
 import tobi from "../images/tobi.jpg";
@@ -154,7 +152,7 @@ class Home extends Component {
                   </button>
                 </li>
                 <li className="nav-item">
-                  <button className="btn nav-link shownav-link" style={{backgroundColor:"transparent"}}>
+                  <button className="btn nav-link shownav-link aboutlinkhover" style={{backgroundColor:"transparent"}}>
                   <Link to="/about" className="">
                     About Us
                   </Link>

@@ -1,20 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Link } from "react-router-dom"
+import { BrowserRouter as Link } from "react-router-dom";
 import "animate.css/animate.css";
 import Particles from 'react-particles-js';
 import Slider from '../Home/Slider'
-import Animate from "animate.css-react";
 import AOS from "aos";
 import NavIcon from "../Home/NavIcon";
 import SideDrawer from "../Home/SideDrawer";
-import frontend from "../images/frontend.jpg";
-import blackwelcome from "../images/blackwelcome.jpg";
-import blackteam from "../images/blackteam.jpg";
-import backend from "../images/backend.jpg";
-import dwayne from "../images/dwayne.jpg";
-import graphic from "../images/graphic.jpg";
-import jane from "../images/jane.jpg";
-import phone from "../images/phone.png";
 import logo from "../images/logo.png";
 import "./About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -144,7 +135,7 @@ class Home extends Component {
             <div className="shownav">
               <ul className="nav">
               <li className="nav-item">
-                  <button className=" btn nav-link shownav-link" style={{background:"transparent"}}>
+                  <button className=" btn nav-link shownav-link aboutlinkhover" style={{background:"transparent"}}>
                   <Link exact to="/" className="">
                     Home
                   </Link>
@@ -160,11 +151,6 @@ class Home extends Component {
                 <li className="nav-item">
                   <a className="nav-link shownav-link" href="#">
                     Service
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link shownav-link" href="#">
-                    Page
                   </a>
                 </li>
                 <li className="nav-item">
