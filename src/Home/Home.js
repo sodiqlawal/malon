@@ -206,7 +206,7 @@ class Home extends Component {
         <main className="main mainsectioncontainer my-5">
           <section className="mainsection">
             <h3 className="text-center mainsectiontitle pt-5">
-              Our Mission and Vission
+              Our Mission and Vision
             </h3>
           </section>
           <section className="sectionproduct mt-3 px-2 d-flex">
