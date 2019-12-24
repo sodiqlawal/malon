@@ -187,7 +187,7 @@ class Home extends Component {
         </div>
         {/* end sidedrawer */}
         {/* start mainwelcome */}
-        <Animate appear="fadeInDown" durationAppear={1000} component="div">
+        <Animate appear="fadeInLeft" durationAppear={2000} component="div">
           <main className="mainwelcome text-center my-4">
             <section className="my-auto">
               <h2 className="welcometitle">
