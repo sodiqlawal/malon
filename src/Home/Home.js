@@ -210,13 +210,7 @@ class Home extends Component {
             </h3>
           </section>
           <section className="sectionproduct mt-3 px-2 d-flex">
-            <div className="product w-50">
-              <div className="">
-                {/* <FontAwesomeIcon
-                  icon={faEnvelopeOpenText}
-                  className="ml-4 grow icon envelopeicon"
-                /> */}
-              </div>
+            <div className="product">
               <div>
                 <strong style={{fontSize: "1.5rem"}}> Our Vision</strong>
                 <p style={{textAlign:"start"}}>
@@ -224,7 +218,7 @@ class Home extends Component {
                 </p>
               </div>
             </div>
-            <div className="product w-50">
+            <div className="product">
               <div>
                 {/* <FontAwesomeIcon
                   icon={faMapMarkerAlt}
