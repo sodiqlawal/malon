@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 import Home from './Home/Home';
 import About from './About/About';
 import './App.css';
@@ -9,20 +9,12 @@ import './App.css';
 
 function App() {
   return (
-    // <div>
-    //   {/* <Home /> */}
-    //   <About />
-    // </div>
-    <React.Fragment>
     <Router>
       <div>
-      <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      </Switch>
+      <Route exact path="/" component={Home}></Route>
+      <Route path="/about" component={About}></Route>
       </div>
     </Router>
-    </React.Fragment>
   );
 }
 
