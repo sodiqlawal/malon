@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { BrowserRouter as NavLink } from "react-router-dom";
 import "animate.css/animate.css";
 import Particles from "react-particles-js";
 import Slider from "../Home/Slider";
@@ -128,14 +128,14 @@ class Home extends Component {
                     className=" btn nav-link shownav-link aboutlinkhover"
                     style={{ background: "transparent" }}
                   >
-                    <Link exact to="/">
+                    <NavLink exact to="/">
                       Home
-                    </Link>
+                    </NavLink>
                   </button>
                 </li>
                 <li className="nav-item">
                   <button className="btn nav-link shownav-link about">
-                    <Link to="/about">About</Link>
+                    <NavLink to="/about">About</NavLink>
                   </button>
                 </li>
                 <li className="nav-item">

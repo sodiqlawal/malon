@@ -482,7 +482,6 @@ class Home extends Component {
                   <li className="footeraboutlist">Terms and Policies</li>
                 </ul>
               </div>
-              {/* end about section */}
               {/* start sitemap */}
               <div className="text-white py-2 footercontainertext">
                 <strong>Headquarters</strong>

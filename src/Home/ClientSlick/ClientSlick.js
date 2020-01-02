@@ -20,7 +20,7 @@ class ClientSlick extends React.Component {
       pauseOnHover: true
     };
     return (
-      <Slider {...settings} style={{ padding: "2rem auto", width: "90%" }}>
+      <Slider {...settings} className="mx-auto" style={{ padding: "2rem auto", width: "90%"}}>
         <div className="ml-2">
           <img
             src={auditor}
