@@ -149,16 +149,6 @@ class Home extends Component {
                       </Link>
                     </button>
                   </li>
-                  <li className="nav-item">
-                    <button
-                      className="btn nav-link shownav-link aboutlinkhover"
-                      style={{ backgroundColor: "transparent" }}
-                    >
-                      <NavLink to="/about">
-                        About Us
-                      </NavLink>
-                    </button>
-                  </li>
                   <li className="nav-item white">
                     <Link 
                     activeClass="active"
@@ -172,11 +162,6 @@ class Home extends Component {
                     </Link>
                   </li>
                   <li className="nav-item white">
-                    <a href="" className="nav-link shownav-link">
-                      Blog
-                    </a>
-                  </li>
-                  <li className="nav-item white">
                     <Link 
                     activeClass="active"
                     to="contact"
@@ -187,6 +172,16 @@ class Home extends Component {
                     className="nav-link shownav-link pointer">
                       Contact Us
                     </Link>
+                  </li>
+                  <li className="nav-item">
+                    <button
+                      className="btn nav-link shownav-link aboutlinkhover"
+                      style={{ backgroundColor: "transparent" }}
+                    >
+                      <NavLink to="/about">
+                        About Us
+                      </NavLink>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -378,41 +373,41 @@ class Home extends Component {
             <div className="teamgrid">
               {/* start first */}
               <div className="one mb-2">
-                <img src={olamide} alt="" />
-                <h5 className="mt-2">Olamide</h5>
-                <p style={{textAlign:"start", marginTop:"-0.5rem"}}>CEO/Principal Consultant</p>
+                <img src={olamide} alt="" style={{borderRadius:"100%", height:"250px", width:"250px"}}/>
+                <h5 className="mt-2 text-center">Olamide</h5>
+                <p style={{textAlign:"center", marginTop:"-0.5rem"}}>CEO/Principal Consultant</p>
                 <div></div>
               </div>
               {/* end first */}
               {/* start second */}
               <div className="two mb-2">
-                <img src={tobi} alt="" />
-                <h5 className="mt-2">Tobi</h5>
-                <p style={{textAlign:"start", marginTop:"-0.5rem"}}>Mobile developer</p>
+                <img src={tobi} alt="" style={{borderRadius:"100%", height:"250px", width:"250px"}}/>
+                <h5 className="mt-2 text-center">Tobi</h5>
+                <p style={{textAlign:"center", marginTop:"-0.5rem"}}>Mobile developer</p>
                 <div></div>
               </div>
               {/* end second */}
               {/* start third */}
               <div className="three mb-2">
-                <img src={damola} alt="" />
-                <h5 className="mt-2">Damola</h5>
-                <p style={{textAlign:"start", marginTop:"-0.5rem"}}>Backend Developer</p>
+                <img src={damola} alt="" style={{borderRadius:"100%", height:"250px", width:"250px"}}/>
+                <h5 className="mt-2 text-center">Damola</h5>
+                <p style={{textAlign:"center", marginTop:"-0.5rem"}}>Backend Developer</p>
                 <div></div>
               </div>
               {/* end third */}
               {/* start fourth */}
               <div className="four mb-2">
-                <img src={cynthia} alt="" />
-                <h5 className="mt-2">Cynthia</h5>
-                <p style={{textAlign:"start", marginTop:"-0.5rem"}}>Frontend Developer(Intern)</p>
+                <img src={cynthia} alt="" style={{borderRadius:"100%", height:"250px", width:"250px"}}/>
+                <h5 className="mt-2 text-center">Cynthia</h5>
+                <p style={{textAlign:"center", marginTop:"-0.5rem"}}>Frontend Developer(Intern)</p>
                 <div></div>
               </div>
               {/* end fourth */}
               {/* start fourth */}
               <div className="five mb-2">
-                <img src={william} alt="" />
-                <h5 className="mt-2">William</h5>
-                <p style={{textAlign:"start", marginTop:"-0.5rem"}}>UI Designer</p>
+                <img src={william} alt="" style={{borderRadius:"100%", height:"250px", width:"250px"}}/>
+                <h5 className="mt-2 text-center">William</h5>
+                <p style={{textAlign:"center", marginTop:"-0.5rem"}}>UI Designer</p>
                 <div></div>
               </div>
               {/* end fourth */}

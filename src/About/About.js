@@ -166,7 +166,7 @@ class Home extends Component {
         {/* end sidedrawer */}
 
         {/* start about */}
-        <div className="p-5">
+        <div className="p-5 about">
           <h3 className="my-3">About Us</h3>
           <p className="mt-4">
             Malon Global Technologies Limited (Branded as Malon Tech) brings
