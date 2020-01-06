@@ -976,3 +976,9 @@ transform: rotateX(180deg);
     width: 20%;
   }
 }
+
+.current {
+  color: orangered;
+}
+
+#mc_embed_signup{background:#000; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%; z-index: 100000;position: absolute;}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import $ from "jquery"
 import { Link, animateScroll as scroll } from "react-scroll";
 import { BrowserRouter as NavLink } from "react-router-dom";
 import "animate.css/animate.css";
@@ -104,6 +105,60 @@ class Home extends Component {
     AOS.init();
   }
 
+
+  componentDidMount(){
+
+    // $(document).ready(function() {
+    // var s1 = $(".mainsectioncontainer");
+    // var s2 = $(".services");
+    // var s3 = $(".teamcontainer");
+    // var s4 = $(".contact");
+    // var s5 = $(".footercontainer");
+
+    // var pos = s1.position();
+    // var pos2 = s2.position();
+    // var pos3 = s3.position();
+    // var pos4 = s4.position();
+    // var pos5 = s5.position();
+
+
+    // $(window).scroll(function() {    
+
+    //   var scroll = $(window).scrollTop();
+      
+    //   if (scroll > 500) {
+    //   $(".nav li:first-child").addClass("current");
+    //   }
+      
+    //   if (scroll >= pos & scroll <= 1000) {
+    //   // $(".nav li:first-child").removeClass("current");
+    //   $(".nav li:nth-child(2)").addClass("current");
+    //   }
+
+    //   if (scroll >= pos2) {
+    //     $(".nav li:nth-child(2)").removeClass("current");
+    //     $(".nav li:nth-child(3)").addClass("current");
+    //     }
+
+    //   if (scroll >= pos3) {
+    //     $(".nav li:nth-child(3)").removeClass("current");
+    //     $(".nav li:nth-child(4)").addClass("current");
+    //     }
+      
+    //   var scrollBottom = $(window).scrollTop() + $(window).height();
+      
+    //   if (scroll < 500) {
+    //   $(".nav li:first-child").removeClass("current");
+    //   }
+      
+    //   if (scroll < 750) {
+    //   $(".nav li:nth-child(2)").removeClass("current");
+    //   }
+      
+    //   });
+    // });
+  }
+
   // lifecycle to execute aos
   componentWillReceiveProps() {
     AOS.refresh();
@@ -120,6 +175,7 @@ class Home extends Component {
 
   render() {
     let date = new Date().getFullYear();
+    const {pathRoute} = this.props
     return (
       // container
       <React.Fragment>
@@ -136,17 +192,32 @@ class Home extends Component {
               <div className="shownav">
                 <ul className="nav">
                   <li className="nav-item">
-                    <button className=" btn nav-link shownav-link home">
-                      <Link 
+                    <button className=" btn nav-link shownav-link home"
+                    onClick={()=>pathRoute("home")}>
+                      {/* <Link 
                       activeClass="active"
                       to="home"
                       spy={true}
                       smooth={true}
                       offset={-70}
                       duration={500}
-                      >
-                        Home
-                      </Link>
+                      > */}
+                      {/* <NavLink to="/" exact>     */}
+                      Home
+                      {/* </NavLink> */}
+                      {/* </Link> */}
+                    </button>
+                  </li>
+                  <li className="nav-item">
+                    <button
+                      className="btn nav-link shownav-link aboutlinkhover"
+                      style={{ backgroundColor: "transparent" }}
+                      onClick={()=>pathRoute("about")}
+                    >
+                      {/* <NavLink to="/about" */}
+                      {/* > */}
+                        About Us
+                      {/* </NavLink> */}
                     </button>
                   </li>
                   <li className="nav-item white">
@@ -172,16 +243,6 @@ class Home extends Component {
                     className="nav-link shownav-link pointer">
                       Contact Us
                     </Link>
-                  </li>
-                  <li className="nav-item">
-                    <button
-                      className="btn nav-link shownav-link aboutlinkhover"
-                      style={{ backgroundColor: "transparent" }}
-                    >
-                      <NavLink to="/about">
-                        About Us
-                      </NavLink>
-                    </button>
                   </li>
                 </ul>
               </div>
@@ -433,27 +494,21 @@ class Home extends Component {
                 <div className="contact_header">
                   <input
                     type="text"
-                    name=""
-                    id=""
                     placeholder="Name"
-                    className="contact_name wow fadeInUp"
+                    className="contact_name"
                   />
                   <input
                     type="email"
-                    name=""
-                    id=""
                     placeholder="Email"
-                    className="contact_email wow fadeInUp"
+                    className="contact_email"
                   />
                 </div>
                 {/* form textarea */}
                 <textarea
-                  name=""
-                  id=""
                   cols="30"
                   rows="10"
                   placeholder="How can we help you?"
-                  className="contact_textarea wow fadeInUp"
+                  className="contact_textarea"
                 ></textarea>
                 <button type="submit" className="contact_btn btn wow fadeInUp" data-wow-delay="0.2s">
                   Submit
@@ -506,23 +561,30 @@ class Home extends Component {
                     To get latest update from our latest articles, subscribe to
                     our page now
                   </p>
-                  <div className="input-group mb-3">
+                  <form action="https://gmail.us4.list-manage.com/subscribe/post?u=f1ca8176cff5519d851b0cc53&amp;id=eb151166c4" method="post" target="_blank" className="validate" novalidate>
+                  <div className="input-group mb-3 aria-hidden='true'">
                     <input
-                      type="text"
+                      type="email"
                       className="form-control subscribesearch"
-                      placeholder="Enter your username"
-                      aria-label="Enter your username"
+                      placeholder="Enter your email"
+                      aria-label="Enter your email"
                       aria-describedby="basic-addon2"
+                      required
                     />
+
+                    <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_f1ca8176cff5519d851b0cc53_eb151166c4" tabindex="-1" value="" /></div>
                     <div className="input-group-append">
-                      <span
+                      <input
+                        type="submit"
                         className="input-group-text btn text-white pointer"
                         id="basic-addon2"
-                      >
-                        Subscribe
-                      </span>
+                        value="Subscribe"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                      />
                     </div>
                   </div>
+                  </form>
                 </div>
               </div>
               {/* end footertop */}
@@ -553,6 +615,18 @@ class Home extends Component {
             {/* end footerbottom */}
           </footer>
           {/* end footer */}
+      
+{/* <div id="mc_embed_signup">
+<form action="https://gmail.us4.list-manage.com/subscribe/post?u=f1ca8176cff5519d851b0cc53&amp;id=eb151166c4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+
+    <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_f1ca8176cff5519d851b0cc53_eb151166c4" tabindex="-1" value="" /></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
+    </div>
+</form>
+</div> */}
         </div>
       </React.Fragment>
     );
