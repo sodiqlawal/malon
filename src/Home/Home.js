@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Swiper, Slide } from 'react-dynamic-swiper'
+import 'react-dynamic-swiper/lib/styles.css'
 import $ from "jquery"
 import { Link, animateScroll as scroll } from "react-scroll";
 import { BrowserRouter as NavLink } from "react-router-dom";
@@ -464,14 +466,22 @@ class Home extends Component {
                 <div></div>
               </div>
               {/* end fourth */}
-              {/* start fourth */}
+              {/* start fifth */}
               <div className="five mb-2">
                 <img src={william} alt="" style={{borderRadius:"100%", height:"250px", width:"250px"}}/>
                 <h5 className="mt-2 text-center">William</h5>
                 <p style={{textAlign:"center", marginTop:"-0.5rem"}}>UI Designer</p>
                 <div></div>
               </div>
-              {/* end fourth */}
+              {/* end fifth */}
+              {/* start sixth */}
+              <div className="five mb-2">
+                <img src={'https://ca.slack-edge.com/T9Q2CKC4V-UE1FGDJC8-a8c316792668-512'} alt="" style={{borderRadius:"100%", height:"250px", width:"250px"}}/>
+                <h5 className="mt-2 text-center">Sodiq</h5>
+                <p style={{textAlign:"center", marginTop:"-0.5rem"}}>Frontend Developer</p>
+                <div></div>
+              </div>
+              {/* end sixth */}
             </div>
           </div>
           {/* end team */}
@@ -561,7 +571,7 @@ class Home extends Component {
                     To get latest update from our latest articles, subscribe to
                     our page now
                   </p>
-                  <form action="https://gmail.us4.list-manage.com/subscribe/post?u=f1ca8176cff5519d851b0cc53&amp;id=eb151166c4" method="post" target="_blank" className="validate" novalidate>
+                  <form action="https://gmail.us4.list-manage.com/subscribe/post?u=f1ca8176cff5519d851b0cc53&amp;id=eb151166c4" method="post" target="_blank" className="validate" noValidate>
                   <div className="input-group mb-3 aria-hidden='true'">
                     <input
                       type="email"
@@ -572,7 +582,7 @@ class Home extends Component {
                       required
                     />
 
-                    <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_f1ca8176cff5519d851b0cc53_eb151166c4" tabindex="-1" value="" /></div>
+                    <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_f1ca8176cff5519d851b0cc53_eb151166c4" tabIndex="-1" value="" /></div>
                     <div className="input-group-append">
                       <input
                         type="submit"
