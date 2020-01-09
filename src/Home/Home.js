@@ -475,12 +475,6 @@ class Home extends Component {
               </div>
               {/* end fifth */}
               {/* start sixth */}
-              <div className="five mb-2">
-                <img src={'https://ca.slack-edge.com/T9Q2CKC4V-UE1FGDJC8-a8c316792668-512'} alt="" style={{borderRadius:"100%", height:"250px", width:"250px"}}/>
-                <h5 className="mt-2 text-center">Sodiq</h5>
-                <p style={{textAlign:"center", marginTop:"-0.5rem"}}>Frontend Developer</p>
-                <div></div>
-              </div>
               {/* end sixth */}
             </div>
           </div>
