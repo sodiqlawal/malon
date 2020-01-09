@@ -148,16 +148,6 @@ class Home extends Component {
                     {/* <NavLink to="/about">About</NavLink> */}
                   </button>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link shownav-link" href="#">
-                    Service
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link shownav-link" href="#">
-                    Contact
-                  </a>
-                </li>
               </ul>
             </div>
             <NavIcon togglebutton={this.NavIconToggleClickHandler} />
